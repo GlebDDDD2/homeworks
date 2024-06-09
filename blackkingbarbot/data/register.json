@@ -1,0 +1,17 @@
+import json
+
+name = input("Введите ваше имя: ")
+age = input("Введите ваш возраст: ")
+number = input("Введите ваш номер телефона: ")
+
+registration_data = {
+    "name": name,
+    "age": age,
+    "number": number,
+    "email": email.
+}
+
+json_data = json.dumps(registration_data)
+
+with open("registrations.json", "w") as outfile:
+    outfile.write(json_data)
